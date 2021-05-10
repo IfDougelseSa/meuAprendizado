@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #F5F5F5;
+}
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#topo {
+	height: 200px;
+}
+
+#conteudo {
+
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 10px 200px 10px 200px;
+	padding: 10px  0 10px 0;
+	width: 400px;
+	height: 60px;
+	background: url(../imagens/background2.png) no-repeat left center;
+	
+	
+}
+
+a {
+	text-indent: 60px;
+	text-decoration: none;
+	display: block;
+	color: #000;
+	font-size: 1.1em;
+	line-height: 60px;
+
+}
+
+li:hover {
+	background: url(../imagens/background2.png) no-repeat right center;
+}
+
+a:hover {
+	color: #fff;
+}

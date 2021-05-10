@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meu Aprendizado: Git e GitHub</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="home_bootstrap">
+	<div id="container">
+		<div id="topo">
+			
+			<ul id="navegacao">
+				<li>
+					<a id="home_git" href="../git_github/index.html">Git/Github</a>
+				</li>
+				<li>
+					<a href="../linux/index.html">Linux</a>
+				</li>
+				<li>
+					<a href="../html/index.html">HTML</a>
+				</li>
+				<li>
+					<a href="../projeto_css/index.html">CSS</a>
+				</li>
+				<li>
+					<a id="home_bootstrap" href="../bootstrap/index.html">BootStrap</a>
+				</li>
+				<li>
+					<a href="../javascript/index.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="../python/index.html">Python</a>
+				</li>
+				<li>
+					<a href="../php/index.html">PHP</a>
+				</li>
+
+			</ul>
+		
+	
+		</div>
+
+
+		<div id="conteudo_principal">
+		<div id="conteudo">
+		<h3>Formatações de texto</h3>
+		Utilizar class="display-1" para aumentar o tamanho do cabecalho
+		Podendo ir de 1 a 4.
+
+		paragrafos
+		class="lead" utilizar a class lead no paragrafos para terem um destaque maior.
+
+		a class lead e display podem ser aplicadas em diversos elementos.
+
+		Fonte monospace:
+		Tem a mesma largura em todas as letras.
+
+		Classes estilos
+		class="font-weight-bold" texto em negrito
+		class="font-weight-normal" texto normal
+		class="font-italic" texto em italico
+
+		Transformações em textos:
+		class="text-uppercase" Deixar todas as letras maiusculas
+		class="text-lowercase" Deixar todas as letras minusculas
+		class="text-capitalize" Deixar todas as primeiras letras das palavras com letras maiusculas.
+
+		Alinhamentos
+		class="text-right" Deixa o texto a direita
+		class="text-left" Deixa o texto a esquerda
+		class="text-center" Deixa o texto centralizado
+
+		Citações
+		Utilizar o blockquote class="blockquote text-right"
+		Pode colocar mais de uma class
+
+		Citações no rodapé
+		Utilizar o blockquote, footer e cite.
+		footer class="blockquote-footer"
+
+		class="text-truncate"
+		corta parte do texto
+
+		listas
+		ul class="list-unstyled"
+		tirar as marcações da lista
+
+		Para colocar os itens das listas na frente do outro
+
+		ul class="list-inline"
+		li class="list-inline-item"
+		colocar a class list-inline-item em todos os itens da lista.
+
+		<!-- Alinhamentos -->
+		class="text-justify"
+		O texto não fica quebrado, preenche até o final da linha.
+
+		Alinhamento responsivo - text-tela-alinhamento
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+        class="text-md-right"
+
+
+        class="bg-success"
+        Aplica cor de fundo para elemento.
+
+        class="d-inline"
+        Muda o conteudo block para inline.
+
+        class="d-block"
+        Muda o conteudi inline para block
+
+        * Elemento inline não aumenta de tamanho, não é possivel usar margin e width
+
+        class="inline-block"
+       	É possível definir uma altura e margin
+
+       	Elementos flutuantes
+       	class="float-left"
+       	class="float right"
+
+       	Corrigindo elementos flutuantes:
+       	No container pai usar class="clearfix"
+
+       	Posicionamento fixo:
+       	class="fixed-top"
+       	O conteudo fica fixado, podendo usar top ou bottom.
+
+       	float responsivo:
+       	float-sm-right
+       	float-md-right
+       	float-lg-right
+       	float-xl-right
+
+       	Colar no topo
+       	class="sticky-top"
+
+       	O conteudo pode estar no meio da pagina, mas quando utilizar a rolagem e ele chegar no topo, ele vai ficar colado no topo. O sitcky tem apenas top.
+
+
+       	Cores
+     class="text-primary"
+     h1 class="text-primary">Texto primary
+     class="text-secundary">Texto secondary
+     class="text-success">Texto success
+     class="text-info">Texto info
+     class="text-warning">Texto warning
+     class="text-danger">Texto danger
+     class="text-light">Texto light
+     class="text-dark">Texto dark
+     class="text-white">Texto white
+     class="text-black50">Texto black 50
+     class="text-white">Texto white
+
+
+     formatações links
+
+     As mesmas classes que das cores
+
+     background
+     A mesma coisa, porém no lugar de text, colocar bg
+
+     Margin/Padding
+
+    mt -> Margin Top
+    mb -> Margin Bottom
+    ml -> Margin Left
+    mr -> Margin Right
+    mx -> Margin no eixo x (horizontal) esquerda/direita
+    my -> Margin no eixo y (vertical) top/bottom
+    m  -> Margin em todos os lados
+    Valor a definir (0 até 5)
+
+    pt -> Padding Top
+    pb -> Padding Bottom
+    pl -> Padding Left
+    pr -> Padding Right
+    px -> Padding no eixo x (horizontal) esquerda/direita
+    py -> Padding no eixo y (vertical) top/bottom
+    p  -> Padding em todos os lados
+    Valor a definir (0 até 5)
+
+    Tamanhos bordas:
+    Classes de largura
+    class="w-25" 25% 
+    class="w-50" 50%
+    class="w-75" 75%
+    class="w-100" 100%
+    class="w-auto" auto
+
+    Classes de altura:
+    class="h-25" 25% 
+    class="h-50" 50%
+    class="h-75" 75%
+    class="h-100" 100%
+    class="h-auto" auto
+
+    Bordas:
+    class="border"
+    class="border-top"
+    class="border-bottom"
+    class="border-right"
+    class="border-left"
+
+    Cor das bordas:
+    border-'nome_cor'
+
+    Arrendodar as pontas das bordas:
+    rounded
+    rounded-circle A caixa fica em um formato de circulo
+
+    Media queries
+    Definir formatações diferentes dependo da midia
+    media="print" Formatação para imprimir
+    media="screen" Formatação para tela
+
+    @media () {}
+
+    Dentro dos parenteses o tamanho e nas chaves o que vai ser aplicado.
+
+
+    Botões
+    class="btn"
+
+
+    Sistema grid
+
+
+
+			
+
+		</div>
+		<div id="barra_navegacao">
+			<ul class="bootstrap_formatacoes">
+				<li>
+					<a id="home" href="index.html">Home</a>
+				</li>
+				<li>
+					<a id="bootstrap_formatacoes" href="formatacoes.html">Formatações de textos</a>
+				</li>
+				<li>
+					<a id="bootstrap_alinhamentos" href="alinhamentos.html">Alinhamentos de textos</a>
+				</li>
+				<li>
+					<a id="bootstrap_elementos" href="elementos.html">Elementos fltuantes</a>
+				</li>
+			</ul>
+				
+			
+		</div>
+		</div>
+		<div id="rodape">
+			&copy; Copyright 2021 Meu Aprendizado
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>

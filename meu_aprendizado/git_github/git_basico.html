@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meu Aprendizado: Git e GitHub</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="home_git">
+	<div id="container">
+		<div id="topo">
+			
+			<ul id="navegacao">
+				<li>
+					<a id="home_git" href="index.html">Git/Github</a>
+				</li>
+				<li>
+					<a href="../linux/index.html">Linux</a>
+				</li>
+				<li>
+					<a href="../html/index.html">HTML</a>
+				</li>
+				<li>
+					<a href="../projeto_css/index.html">CSS</a>
+				</li>
+				<li>
+					<a href="../bootstrap/index.html">BootStrap</a>
+				</li>
+				<li>
+					<a href="../javascript/index.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="../python/index.html">Python</a>
+				</li>
+				<li>
+					<a href="../php/index.html">PHP</a>
+				</li>
+
+			</ul>
+		
+	
+		</div>
+
+
+		<div id="conteudo_principal">
+		<div id="conteudo">
+
+			
+			<h5>Git status</h5>
+			<p>Para ver o status do git. Recurso muito importante para saber como anda o monitoramento do projeto.</p>
+
+			<h5>Git init</h5>
+			<p>Para inicializar o git em qualquer projeto.</p>
+
+			<h5>.gitignore</h5>
+			<p>Ignorar arquivos ou diretorios.
+			O git não vai controlar a versão/monitorar quando o arquivo estiver no .gitignore.
+			Para ignorar os arquivos basta entrar no arquivo .gitignore e escrever o nome do arquivo que deseja ser ignorado.</p>
+			<p>Ignorar arquivos</p>
+			<p>Basta escrever o nome do arquivo no .gitignore.</p>
+			<p>Exemplo:</p>
+			<p>index.html</p>
+			<p>Ignorar diretórios:</p>
+			<p>Basta escrever **nome_do_diretorio. (utilizar dois astericos quando for diretório).</p>
+			<p>Ignora todos os arquivos do diretório.</p>
+			<p>Exemplo:</p>
+			<p>**projeto_mapas</p>
+			<p>Ignorar extensões:</p>
+			<p>Basta escrever *nome_da_extensão. (Utilizar um astericos quando for ignorar extensões).</p>
+			<p>Ignora todas as extensões</p>
+			<p>Exemplo:</p>
+			<p>*.py</p>
+
+
+			Operações básicas.
+
+			Configurar identificação.
+			Assim que criar um repositório fazer as seguintes conf:
+			git config user.name "nome_do_usuario"
+			git config user.email "email_do_usuario"
+
+			Para configuração global usar uma flag --global
+			git config --global user.name "nome_do_usuario"
+			git config --global user.email "email_do_usuario"
+
+
+			git add "nome do arquivo"
+			Para adicionar arquivos para ficaram no estado tracked
+			git add .
+			Adiciona todos os arquivos que não estão sendo monitorados.
+
+			git commit -m ""
+			Ṕara os arquivos fiquem pronto para o branch do projeto.
+			Conhecido como fotografia do projeto.
+
+			hash id 
+			Identificador do commit
+
+			Adicionando novos arquivos
+			Ao alterar ou criar um arquivo, utilizar o git add.
+
+			git add .
+			Adiciona todos os arquivos no projeto.
+
+			Consultando histórico do projeto.
+			Para cada commit temos um hash(identificador)
+			git log
+			Mostra os log dos commits
+			Quando tiver muitos logs, vai aparecer dois pontos caso queira procurar um log muito antigo. Além disso, para procurar um log, basta digitar /"o que quer procurar", depois clicar b para voltar nois dois pontos. caso queira sair, clicar q.
+
+			Para mudas essas configurações usar o comando:
+
+
+			git config core.pager cat
+			Com esse comando o git utiliza uma barra comuns para procurar logs manualmente.
+
+
+
+			git config core.pager less
+			Para voltar as config anteriores.
+
+			Outros recursos do log
+
+			git log -2
+			Para ver os dois ultimos log
+			git log 'numero'
+			ver os ultimos logs anteriores
+
+			git log --oneline
+			Listagem de todos os commits em apenas uma linha, de forma mais resumida.
+
+			git log --oneline -1
+			para ver o ultimo commit com apenas uma linha.
+
+			git log --before ="2020-05-16"
+			busca logs antes da data deferida
+
+			git log --after ="data"
+			busca de logs apos da data deferida
+
+			git log --since="2 days ago"
+			busca de logs desde 2 dias atras
+
+			git log --author="nome do autor"
+			busca os dos do deferido autor.
+
+			git help log
+			mostra o manual do log
+
+			Voltando no tempo
+			git checkout "hash id"
+
+			git checkout master
+			voltar para o commit principal
+
+			Conhecendo novos comandos
+			git mv nome_do_arquivo_que_vai_ser_renomeado nome_novo_do_arquivo
+
+			Caso o arquivo for renomeado sem o uso do comando, será necessário adicionar o arquivo para o estado tracked novamente.
+
+			git rm nome_do_arquivo
+
+			caso o arquivo for apagado sem o uso do comando, será necessário usar o git add e depois commitar.
+
+			git diff --staged
+
+			Compara o arquivo que ainda não foi commitado com o anterior. Mostra as diferenças.
+
+			git diff hash is
+			Mostra a diferenca do arquivo que não foi commitado com o determinado hash id.
+
+			git diff hash_id_1..hash_id_2
+			Mostra a diferença entre dois commits qualquer,s endo que o hash_id_1 tem que ser mais antigo que o hash_id_2
+
+
+			Desfazendo coisas:
+			git commit --amend -m "Mensagem correta"
+			Quando escrever errado, utilizar esse comando para consertar.
+
+			Além disso, quando alterar um programa e quiser adiciona-lo no ultimo commit, usar o git commit --amend. Sendo assim, o ultimo commit será atualizado com as modificações e nova mensagem.
+
+
+			Tirando arquivos de staged
+
+			git restore --staged "nome_do_arquivo"
+			tirar o arquivo do staged, tiramos ele do monitoramento.
+
+			git checkout nome_do_programa
+
+			O arquivo volta para o estado anterior para cara arquivo.
+
+			git reset HEAD --hard
+
+			Retorna pro estágio do ultimo commit para todos os arquivos.
+
+			git reset HEAD^ --hard
+			Caso o usuario tenha feito um commit e não tenha gostado do commit, esse comando serve para voltar o  projeto para o commmit anterior.
+
+			
+
+			
+
+		</div>
+		<div id="barra_navegacao">
+			<ul class="git_basico">
+				<li>
+					<a id="home" href="index.html">Home</a>
+				</li>
+				<li>
+					<a id="git_basico" href="git_basico.html">Git Básico</a>
+				</li>
+				<li>
+					<a id="git_intermediario" href="git_intermediario.html">Git Intermediáro</a>
+				</li>
+				<li>
+					<a id="git_avancado "href="git_avancado.html">Git avançado</a>
+				</li>
+			</ul>
+				
+			
+		</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

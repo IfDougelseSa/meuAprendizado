@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meu Aprendizado: Git e GitHub</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="home_git">
+	<div id="container">
+		<div id="topo">
+			
+			<ul id="navegacao">
+				<li>
+					<a id="home_git" href="index.html">Git/Github</a>
+				</li>
+				<li>
+					<a href="../linux/index.html">Linux</a>
+				</li>
+				<li>
+					<a href="../html/index.html">HTML</a>
+				</li>
+				<li>
+					<a href="../projeto_css/index.html">CSS</a>
+				</li>
+				<li>
+					<a href="../bootstrap/index.html">BootStrap</a>
+				</li>
+				<li>
+					<a href="../javascript/index.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="../python/index.html">Python</a>
+				</li>
+				<li>
+					<a href="../php/index.html">PHP</a>
+				</li>
+
+			</ul>
+		
+	
+		</div>
+
+
+		<div id="conteudo_principal">
+		<div id="conteudo">
+			<h3> Git e Github </h3>
+
+			<p>Essa página foi feita para o estudo/revisão de Git e GitHub.</p>
+			<br>
+
+			<p>O git é um sistema de gerenciamento de controle de versão de código/documentos, o mesmo possui recursos avançados de monitoramento e acompanhamento de arquivos que fazem parte de um projeto.
+			Exemplo: Ao criar um projeto e adiciona-lo no git, é possivel monitora-lo e fazer alterações sem prejudicar o processo principal.</p>
+
+			<h3>O ciclo de vida do status de arquivos do Git</h3>
+			<img src="imagens/git2.jpg" width="550">
+
+
+			<h4>Untracked</h4>
+			<p>Quando iniciamos o comando git init para iniciar o git em um novo projeto, todos os arquivos desse mesmo projeto estarão no estado untracked. Isso significa que, apesar do arquivo fazer parte do projeto ele ainda não foi adicionado ao monitoramento do git, ou seja, ele não está "rastreado".</p>
+			<p>Quando não houver monitoramento do arquivo o git não estará controlando o versionamento desse arquivo.</p>
+			<br>
+
+
+			<h4>Tracked</h4>
+			<p>
+			Tracked: Quando o arquivo é adicionado no monitoramento do Git, o estado desse arquivo passa a ser 'tracked', ou seja, rastreado.
+			A partir desse estágio que todo poder do git comeca, pois ele passa a controlar as mudancas do arquivos.
+			Além disso, os arquivos do estado tracked são conhecido como new file.</p>
+
+			<h4>Modified</h4>
+			<p>Modified: Quando o arquivo que está sendo rastreado sofre mudanças ele passa a ser modified.</p>
+
+			<h4>Staged</h4>
+			<p>Quando um arquivo já foi modificado e finalizado, ele passa para o estágio staged, sendo enviado para o repositório através de commits.</p>
+
+			<h4>Os primeiros passos no git</h4>
+
+			<h5>1 -git init - untracked</h5>
+			<p>Para adicionar o git ao seu projeto use o comando git init, porém os arquivos do projeto estarão untracked, ou seja, não monitorados.</p>
+			<h5>2- gid add "nome_do_arquivo" - tracked</h5>
+			<p>Os arquivos estão sendo monitorados.</p>
+			<h5>Alterando o arquivo - modified</h5>
+			<p>Suponha que você tenha alterado um arquivo tracked, então seu arquivo estará no estado modified.</p>
+			<h5>3- git add - tracked</h5>
+			<p>Para deixar seu arquivo tracked novamente, apenas use o git add "nome do arquivo".
+			Pronto!
+			O arquivo está no estado tracked.</p>
+			<h5>4- git commit -m "mensagem_relevante_sobre_o_arquivo" - staged</h5>
+			<p>Por último e não menos importante, toda vez que mudanças relevantes forem feitas no arquivo, adicionar um commit sempre será bom, pois saberá o que foi mudado e quando.</p>
+
+
+
+
+
+		</div>
+		<div id="barra_navegacao">
+			<ul class="home">
+				<li>
+					<a id="home" href="index.html">Home</a>
+				</li>
+				<li>
+					<a id="git_basico" href="git_basico.html">Git Básico</a>
+				</li>
+				<li>
+					<a id="git_intermediario" href="git_intermediario.html">Git Intermediáro</a>
+				</li>
+				<li>
+					<a id="git_avancado" href="git_avancado.html">Git avançado</a>
+				</li>
+			</ul>
+				
+			
+		</div>
+		</div>
+		<div id="rodape">
+			&copy; Copyright 2021 Meu Aprendizado
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
